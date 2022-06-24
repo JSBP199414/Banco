@@ -1,0 +1,46 @@
+@import url(/public/stylesheets/informacionAdicional.css);
+
+/*--------------------------------------MEDIA QUERY------------------------------------*/
+/*--------------------------------------MEDIA QUERY------------------------------------*/
+
+/*--------------------Mediaquery max-width:1227px---------------*/
+@media all and (max-width:1227px){
+    header{height: 180px;}
+}
+
+/*--------------------Mediaquery max-width:1050px---------------*/
+@media all and (max-width:1050px){
+    /*MAIN*/
+    main section#fondo div.cajas div.texto p{font-size: .8rem;}
+}
+
+/*--------------------Mediaquery max-width:800px---------------*/
+@media all and (max-width:800px){
+    /*HEADER*/
+    header{height: 190px;}
+    header label img{display: none;}
+    header #lineaDos nav#derecha a{color: white; text-shadow: none;}
+    /*MAIN*/
+    main section#fondo div.cajas{flex-basis: 40%;}
+    main section#fondo div.cajas div.texto p{font-size: .6rem;}
+    main section#fondo div.cajas div.texto h5{font-size: .7rem;}
+    /*FOOTER*/
+    footer label img{display: none;}
+}
+
+/*--------------------Mediaquery max-width:600px---------------*/
+@media all and (max-width:600px){
+    /*HEADER*/
+    header{height: 220px;}
+}
+
+/*--------------------Mediaquery max-width:500px---------------*/
+@media all and (max-width:500px){
+    /*HEADER*/
+    header{height: 270px;}
+    header #lineaDos{height: 50px;}
+    /*MAIN*/
+    main{height: 1000px;}
+    main section#fondo{height: 1000px;}
+    main section#fondo div.cajas{flex-basis: 100%;}
+}

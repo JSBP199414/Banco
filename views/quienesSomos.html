@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Incluimos favicon para icon de favoritos (Arroja error 404 cuando no tenemos asignado un icon asociado a tu pagina)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/principal/icons8-banco-48.ico" />
+    <link rel="stylesheet" href="/public/stylesheets/quienesSomos.css" />
+    <link rel="stylesheet" href="/public/stylesheets/mediaQuery/mediaQueryQuienesSomos.css">
+    <title>Banco mi Colombia</title>
+  </head>
+
+  <body>
+    <!--CONTENT FLEX BOX-->
+    <div id="content">
+      <!--HEADER-->
+      <header>
+        <!--HEADER LINEA UNO-->
+        <div id="lineaUno">
+          <!--HEADER LINEA UNO COLUMNA UNO-->
+          <div>
+            <h1>BANCO MI COLOMBIA</h1>
+            <nav>
+              <ul>
+                <li><a href="http://localhost:3000" id="personas">PERSONAS</a></li>
+                <li><a href="http://localhost:3000" id="empresas">EMPRESAS</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--HEADER LINEA UNO COLUMNA DOS-->
+          <div>
+            <nav>
+              <ul>
+                <li><a href="#">¿Quienes somos?</a></li>
+                <li><a href="http://localhost:3000/informacionInversionistas">Información para inversionistas</a></li>
+                <li><a href="http://localhost:3000/informacionAdicional">Información adicional</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <a href="http://localhost:3000/users" id="ingreso"
+                >INGRESO CLIENTES</a
+              >
+            </nav>
+          </div>
+        </div>
+        <!--HEADER LINEA DOS-->
+        <div id="lineaDos">
+          <label for="chekearUno"><img src="/public/images/principal/icons8-chevron-abajo-en-círculo-30.png" alt="Flecha abajo"></label>  
+          <input type="checkbox" id="chekearUno" />
+          <!--FOOTER: SUBFOOTER-->
+          <div id="subMenu">
+            <nav>
+              <ul>
+                  <li><a href="http://localhost:3000/trabajaConNosotros">Trabaja con nosotros</a></li>
+                  <li><a href="http://localhost:3000/simuladorDeCredito">Simulador de credito</a></li>
+                  <li><a href="http://localhost:3000/tarjetas">Nuestras tarjetas</a></li>
+              </ul>
+          </nav>
+          </div>
+          <nav id="derecha"><a href="">Pagos en linea y PSE</a></nav>
+          <% if(user){ %>
+          <h2>Usuario <%= user.nombres %> <%= user.apellidos %></h2>
+          <% } %>
+          <nav id="izquierda">
+            <a href="/logout" >Cerrar sesion</a>
+          </nav>
+        </div>
+      </header>
+      <!--MAIN-->
+      <main>
+        <!--MAIN SECTION-UNO-->
+        <section id="fondo">
+          <!--SECTION-UNO FILA UNO-->
+          <div>
+            <h3>¿Quienes somos?</h3>
+            <p>
+              Non esse commodo exercitation enim ipsum et officia Lorem
+              pariatur. Nulla cupidatat ad occaecat aliquip ea incididunt enim
+              culpa fugiat velit velit sit id quis. Deserunt dolore laboris
+              consectetur id minim sit sit enim velit Lorem deserunt nostrud.
+              Labore ut dolore est qui laboris enim ullamco et exercitation
+              laborum nostrud irure dolore veniam. Consectetur qui et aliqua
+              aliquip pariatur magna ad magna do sint incididunt quis. Amet
+              consequat laborum fugiat culpa laboris. Sunt id laboris aliqua
+              veniam commodo proident consequat ex culpa. Ut aliquip incididunt
+              deserunt non sit irure ut minim officia anim aute in nulla esse.
+              Sit consectetur ipsum Lorem laborum velit ipsum laborum quis
+              minim. Reprehenderit reprehenderit commodo sunt do ipsum aute sint
+              sunt id amet mollit. Exercitation enim velit est eiusmod
+              adipisicing excepteur incididunt nulla eiusmod consectetur
+              nostrud. Incididunt eiusmod voluptate ex tempor dolore esse mollit
+              sunt esse irure. Aliquip eiusmod eu exercitation tempor ut sit
+              exercitation laborum labore. Eu reprehenderit tempor qui minim id
+              irure ullamco non velit non esse incididunt ex. Exercitation qui
+              quis esse commodo culpa minim minim laboris excepteur sint. Eu do
+              elit ex aute officia est magna ut exercitation. Duis velit
+              deserunt sint pariatur ut qui est excepteur ad sunt. Sint
+              incididunt reprehenderit do aliquip consequat culpa aliqua. Nisi
+              excepteur est Lorem velit tempor magna eiusmod quis elit
+              consectetur. Amet velit irure cupidatat consectetur. Esse veniam
+              sint adipisicing dolore aute adipisicing quis ex minim sunt anim
+              nisi aliquip consectetur. Proident excepteur do Lorem commodo
+              tempor esse. Sit cupidatat dolor tempor aute et aute. Est commodo
+              nisi ut sit veniam aute mollit labore dolor. Enim culpa mollit et
+              ea commodo culpa ex ad sunt duis sunt tempor est. Culpa veniam
+              anim esse culpa ullamco magna quis mollit incididunt mollit sit
+              qui. Laborum nulla elit consectetur do aute reprehenderit laborum
+              voluptate ex reprehenderit minim nostrud fugiat. Esse quis sit
+              Lorem consectetur et.
+            </p>
+          </div>
+           <!--SECTION-UNO FILA DOS-->
+          <div>
+            <ul>
+              <li id="inicial">
+                <div id="caja">
+                  <h4>Banco mi Colombia</h4>
+                  <img src="/public/images/quienesSomos/litecoin-lying-over-one-hundred-euro-banknotes.jfif" alt="Imagen dinero">
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonUno" />
+                <label for="botonUno" id="uno">Mision</label>
+                <div id="cajaUno">
+                  <h4>Mision</h4>
+                  <p>
+                    Lorem excepteur et est irure qui consequat veniam culpa
+                    nostrud cillum non eu. Esse nostrud reprehenderit sint ut
+                    pariatur quis. Commodo culpa esse non aliquip proident
+                    pariatur minim. Esse sit consectetur officia sint minim
+                    dolore quis eiusmod dolor deserunt ad consectetur
+                    incididunt. Ex laborum laborum mollit officia do nisi anim
+                    enim Lorem tempor irure ullamco. Sit eiusmod Lorem irure
+                    minim sint qui sint dolore sunt non ut ullamco Lorem dolore.
+                    Occaecat eiusmod nisi nostrud ullamco Lorem exercitation
+                    minim adipisicing mollit aute. Qui duis cillum sunt sit in
+                    adipisicing proident ea. Do ullamco laborum cillum nisi nisi
+                    aliqua labore ex. Exercitation exercitation ipsum est
+                    occaecat nisi. Et dolore officia id cupidatat eu in duis
+                    fugiat ipsum eu ex. Veniam anim amet commodo voluptate ex
+                    velit aute exercitation ullamco dolore Lorem esse sit
+                    pariatur. Laborum duis enim tempor consectetur quis enim
+                    minim qui excepteur mollit magna duis officia proident.
+                    Proident id elit exercitation ex ex sit in cupidatat nostrud
+                    dolor do cillum sit elit. Mollit consequat adipisicing
+                    cillum aliquip reprehenderit laboris sit incididunt minim
+                    irure commodo tempor. Deserunt et non consectetur veniam
+                    occaecat dolor magna in anim incididunt laborum. Pariatur
+                    dolor culpa irure ex Lorem labore voluptate. Ea incididunt
+                    ut velit ea qui proident est ad aute do laboris dolore. Esse
+                    ad id excepteur eiusmod sint anim irure sit incididunt.
+                    Voluptate deserunt voluptate nisi minim consequat Lorem nisi
+                    pariatur sit tempor officia. Ex qui adipisicing labore Lorem
+                    exercitation do tempor cupidatat officia eiusmod. Ex amet
+                    consequat exercitation exercitation cupidatat deserunt
+                    consequat incididunt. Ad laboris ut cupidatat laborum
+                    consequat ipsum anim consequat. Magna sit fugiat occaecat
+                    ipsum officia dolore dolore exercitation aliquip ex laborum
+                    sit id.
+                  </p>
+                  <br />
+                  <p>
+                    Consectetur ut reprehenderit reprehenderit elit enim
+                    pariatur aliquip nisi elit irure. Amet duis et dolor tempor
+                    velit tempor aute elit enim. Do anim sint ad Lorem enim
+                    adipisicing laborum nulla nostrud magna ea. Anim incididunt
+                    est consequat Lorem laboris dolore eu deserunt ut. Ut
+                    adipisicing ut consectetur eu nostrud exercitation commodo
+                    irure nisi ad veniam quis. Do do culpa ullamco culpa officia
+                    consectetur ipsum. Fugiat qui ex veniam reprehenderit nulla
+                    veniam nulla aute sunt sint occaecat mollit.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonDos" />
+                <label for="botonDos" id="dos">Vision</label>
+                <div id="cajaDos">
+                  <h4>Vision</h4>
+                  <p>
+                    Eiusmod ea veniam incididunt id quis. Do irure magna esse
+                    fugiat velit. Duis tempor magna amet eiusmod dolore enim
+                    officia et laboris veniam eiusmod adipisicing consectetur.
+                    Esse elit aliqua eiusmod ipsum deserunt laboris eu eu
+                    exercitation nostrud nulla sunt dolor anim. Tempor esse
+                    voluptate ullamco commodo Lorem fugiat deserunt occaecat
+                    pariatur fugiat deserunt. Velit laboris dolore reprehenderit
+                    exercitation amet. In sunt occaecat eiusmod non ipsum anim
+                    ullamco excepteur consequat est enim irure fugiat. Enim in
+                    magna consequat do quis pariatur veniam esse deserunt
+                    consectetur veniam ut. Laborum in ad minim tempor in aliqua
+                    non aliquip. Eu nisi laborum ullamco esse occaecat commodo
+                    magna officia. Do quis fugiat amet cupidatat minim
+                    reprehenderit laboris elit culpa duis incididunt pariatur
+                    reprehenderit laborum. Nostrud do ullamco esse amet. Lorem
+                    est reprehenderit ad proident. Nisi aute labore eu aliquip
+                    ad eiusmod enim ullamco ea. Mollit aliquip duis consectetur
+                    adipisicing excepteur nulla. Exercitation aliquip quis nisi
+                    tempor elit ea veniam. Ipsum consectetur fugiat adipisicing
+                    duis sit anim sunt occaecat sint officia. Consequat officia
+                    sint mollit qui esse reprehenderit duis commodo officia elit
+                    aute. Qui dolore ipsum cupidatat mollit tempor deserunt
+                    reprehenderit sunt ex esse nisi. Irure id aliquip
+                    exercitation deserunt non labore ut irure amet ullamco quis
+                    est ea aliqua. Adipisicing ea consectetur fugiat quis aute
+                    veniam fugiat. Excepteur eu cupidatat quis minim cillum
+                    exercitation nostrud qui tempor do consequat fugiat ea duis.
+                    Officia amet laborum deserunt minim do. Laborum duis ea esse
+                    consequat. Voluptate magna ad tempor consectetur ut commodo
+                    in proident. Dolor incididunt sit tempor aute non veniam
+                    incididunt excepteur esse consequat adipisicing. Eiusmod
+                    exercitation qui commodo occaecat do et tempor nulla
+                    consectetur non dolore ut id. Nisi sit amet do commodo do
+                    exercitation pariatur aute ad dolore quis velit
+                    reprehenderit. In et esse velit labore quis labore. Amet
+                    tempor sint veniam nisi qui sit magna sint cillum
+                    exercitation reprehenderit. Sit aliquip dolor cupidatat est
+                    occaecat qui consequat sit nostrud reprehenderit nisi sint
+                    non. Quis id et pariatur sunt sint officia dolor cupidatat
+                    eu in nostrud labore occaecat. Reprehenderit laboris sit
+                    officia excepteur dolore nulla aliqua. Veniam adipisicing
+                    sunt sint pariatur sit. Tempor et aliquip aute commodo elit.
+                    Laborum elit fugiat ullamco dolor deserunt elit adipisicing
+                    labore ea consequat ad est veniam laborum. Excepteur ad et
+                    nisi anim anim aliqua nulla laborum in amet commodo non
+                    eiusmod. Ullamco sunt adipisicing duis enim eiusmod.
+                    Voluptate laborum elit et culpa occaecat reprehenderit anim
+                    ut aliquip. Nisi cillum non laboris irure in amet proident
+                    mollit tempor.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonTres" />
+                <label for="botonTres" id="tres">Servicio</label>
+                <div id="cajaTres">
+                  <h4>Servicio</h4>
+                  <p>
+                    Ipsum deserunt officia deserunt nulla eiusmod ut enim.
+                    Aliqua anim minim sint in nulla laboris labore nostrud ea
+                    cupidatat. Aliqua magna voluptate dolore minim et irure
+                    velit ipsum Lorem dolore ullamco ad cillum. Adipisicing
+                    aliqua consequat anim ut consequat nostrud reprehenderit
+                    amet reprehenderit anim veniam laborum est. Magna esse
+                    fugiat ipsum excepteur cupidatat Lorem. Consectetur non ex
+                    veniam Lorem. Ipsum ad amet voluptate dolore mollit. Et nisi
+                    dolor amet cillum nostrud proident. Aliqua sint nisi
+                    pariatur aliqua culpa ex. Adipisicing cillum eu laboris
+                    ullamco enim excepteur proident veniam pariatur deserunt qui
+                    exercitation. Proident anim id non mollit mollit aliquip. Ex
+                    adipisicing officia dolore ad ea ex. Aliquip aute culpa et
+                    in pariatur ad est officia. Est consectetur quis magna
+                    deserunt cupidatat ea non eu proident esse duis sunt. Eu
+                    irure reprehenderit reprehenderit enim nisi culpa et et.
+                    Officia dolore occaecat consequat incididunt. Laboris
+                    nostrud ullamco officia aute.
+                  </p>
+                  <br />
+                  <img
+                    src="/public/images/quienesSomos/icons8-verificar.gif"
+                    alt="Factura servicio"
+                    class="factura"
+                  />
+                  <p>
+                    Non voluptate exercitation laborum aliquip incididunt tempor
+                    laborum ad duis. Ut non enim laborum reprehenderit mollit
+                    pariatur cillum cupidatat culpa exercitation ad sunt. Aliqua
+                    reprehenderit occaecat incididunt laboris ullamco nostrud
+                    reprehenderit magna. Incididunt Lorem quis esse labore ipsum
+                    cupidatat officia. Ad do ullamco ipsum velit nostrud nisi
+                    aute ex labore in consequat consectetur. Cillum deserunt
+                    consequat reprehenderit duis duis adipisicing ad. Id non
+                    cillum et ea. Ea in magna ipsum adipisicing incididunt et
+                    reprehenderit occaecat voluptate commodo est ullamco culpa.
+                    Excepteur voluptate culpa magna ea occaecat veniam ullamco
+                    eiusmod labore ut. Velit et aliqua ad irure aliquip
+                    consectetur. Ea dolore pariatur id Lorem velit et
+                    adipisicing est anim sint. Pariatur cupidatat occaecat nisi
+                    pariatur sit laboris consectetur incididunt excepteur
+                    tempor. Pariatur minim in pariatur est mollit. Exercitation
+                    aliquip aute exercitation tempor exercitation. Sit in ad
+                    reprehenderit cupidatat aliqua officia. Veniam sunt ad amet
+                    est sint ea nisi dolor occaecat adipisicing. Ut non sint
+                    nisi non id incididunt do. Consectetur commodo adipisicing
+                    in duis deserunt. Nisi sit sint aliqua nulla cupidatat
+                    voluptate aliquip dolor laborum magna qui minim
+                    reprehenderit mollit.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonCuatro" />
+                <label for="botonCuatro" id="cuatro">Nuestra gente</label>
+                <div id="cajaCuatro">
+                  <h4>Nuestra gente</h4>
+                  <p>
+                    Eiusmod duis dolore enim sint ullamco aliquip occaecat eu
+                    non reprehenderit quis deserunt. Minim duis esse veniam
+                    cupidatat anim pariatur laboris reprehenderit sunt duis.
+                    Occaecat magna sint officia dolor cupidatat aliqua
+                    consectetur officia cillum deserunt eu tempor sunt. Quis sit
+                    ex non sit excepteur. Tempor officia sit commodo magna
+                    fugiat adipisicing sint culpa elit sint labore sunt
+                    excepteur. Consequat minim veniam labore voluptate Lorem
+                    aute anim. Occaecat elit consectetur enim dolor in irure
+                    tempor. Ex culpa enim reprehenderit cillum eiusmod sit
+                    officia adipisicing adipisicing aute sit. Ipsum labore velit
+                    magna laboris in anim sit proident exercitation incididunt.
+                    Tempor ut proident amet eiusmod aliqua mollit eu mollit
+                    culpa cupidatat. Lorem tempor pariatur adipisicing non
+                    consectetur sint nostrud sit nulla eiusmod amet. Fugiat esse
+                    qui magna Lorem occaecat dolore officia consectetur magna et
+                    veniam mollit cupidatat.
+                  </p>
+                  <br />
+                  <p>
+                    Eiusmod duis dolore enim sint ullamco aliquip occaecat eu
+                    non reprehenderit quis deserunt. Minim duis esse veniam
+                    cupidatat anim pariatur laboris reprehenderit sunt duis.
+                    Occaecat magna sint officia dolor cupidatat aliqua
+                    consectetur officia cillum deserunt eu tempor sunt. Quis sit
+                    ex non sit excepteur. Tempor officia sit commodo magna
+                    fugiat adipisicing sint culpa elit sint labore sunt
+                    excepteur. Consequat minim veniam labore voluptate Lorem
+                    aute anim. Occaecat elit consectetur enim dolor in irure
+                    tempor. Ex culpa enim reprehenderit cillum eiusmod sit
+                    officia adipisicing adipisicing aute sit. Ipsum labore velit
+                    magna laboris in anim sit proident exercitation incididunt.
+                    Tempor ut proident amet eiusmod aliqua mollit eu mollit
+                    culpa cupidatat. Lorem tempor pariatur adipisicing non
+                    consectetur sint nostrud sit nulla eiusmod amet. Fugiat esse
+                    qui magna Lorem occaecat dolore officia consectetur magna et
+                    veniam mollit cupidatat.
+                  </p>
+                  <br />
+                  <img
+                    src="/public/images/quienesSomos/icons8-bolsa-de-dinero-48.png"
+                    alt="Bolsa de dinero" class="dinero"
+                  />
+                  <img
+                    src="/public/images/quienesSomos/icons8-mastercard-48.png"
+                    alt="Tarjeta de credito"
+                    class="factura"
+                  />
+                  <p>
+                    Est excepteur esse exercitation mollit minim qui eiusmod
+                    pariatur tempor.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonCinco" />
+                <label for="botonCinco" id="cinco">Cobertura</label>
+                <div id="cajaCinco">
+                  <h4>Cobertura</h4>
+                  <p>
+                    Commodo mollit amet qui pariatur officia in labore id duis
+                    cillum exercitation consectetur nulla. Sunt sit anim fugiat
+                    adipisicing. Elit consectetur ipsum Lorem adipisicing dolore
+                    elit commodo minim deserunt ullamco nulla officia. Eiusmod
+                    amet veniam commodo non fugiat aliquip fugiat sunt nulla.
+                    Amet aute officia incididunt enim id adipisicing occaecat ad
+                    id occaecat enim dolore. Ex non ea cillum exercitation
+                    cillum consequat qui. Velit labore aliqua mollit sit eu
+                    pariatur ullamco labore nostrud aliqua est. Amet do culpa
+                    proident mollit magna. Fugiat pariatur incididunt commodo
+                    officia duis quis proident exercitation. Et pariatur
+                    consequat exercitation veniam fugiat velit anim nisi in id
+                    amet anim ullamco enim. Labore veniam laboris pariatur eu
+                    incididunt occaecat veniam. Incididunt et nulla non cillum
+                    nostrud non. Exercitation laboris labore labore ad.
+                    Reprehenderit aute labore ut ex eiusmod tempor excepteur.
+                    Non nisi ipsum aliqua laborum Lorem amet amet. Mollit
+                    excepteur dolor excepteur in Lorem. Lorem fugiat aliqua esse
+                    occaecat ea tempor incididunt veniam pariatur esse proident.
+                    Adipisicing sint enim fugiat consectetur reprehenderit.
+                    Nulla ex ut consectetur esse.
+                  </p>
+                  <br />
+                  <ol>
+                    <li>
+                      1. Teléfono Rojo para consultas y transacciones: 33234555
+                      en Bogotá y línea 01 8000 12 0000, sin costo, desde
+                      cualquier lugar de Colombia.
+                    </li>
+                    <li>2. Celular: #322 desde Movistar, en Colombia</li>
+                    <li>
+                      3. Cajeros Multiservicos: Para realizar depósitos y
+                      retiros en efectivo, pagos de créditos y Tarjetas de
+                      Crédito y Giros Nacionales DaviPlate.
+                    </li>
+                    <li>
+                      4. App Banco mi Colombia Móvil, App Empresas y App
+                      DaviPlate.
+                    </li>
+                    <li>
+                      5. Presencia en Redes Sociales: Facebook, Twitter,
+                      LinkedIn, Youtube.
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <input type="radio" name="in" id="botonSeis" />
+                <label for="botonSeis" id="seis">Inversores</label>
+                <div id="cajaSeis">
+                  <h4>Principales inversores</h4>
+                  <p>
+                    Cupidatat nulla consequat amet commodo duis labore elit
+                    exercitation. Consequat nostrud laboris ad elit consectetur
+                    velit officia. Sunt tempor exercitation exercitation
+                    exercitation dolor enim in aliquip. Eu in exercitation
+                    laborum eu id ullamco. Commodo fugiat aliquip culpa ea
+                    eiusmod amet. Commodo sunt irure est aliqua. Laboris
+                    reprehenderit et quis consectetur nostrud sit sunt veniam in
+                    tempor officia pariatur cupidatat anim. Ad dolore labore id
+                    cupidatat. Ipsum incididunt fugiat officia culpa quis
+                    incididunt est occaecat est veniam consequat cupidatat quis
+                    veniam. Sint enim ex enim deserunt ipsum mollit magna Lorem
+                    minim cillum in adipisicing pariatur ex. Reprehenderit esse
+                    ipsum sunt proident. Ut ad do ipsum minim in mollit officia
+                    nulla aliqua ad occaecat fugiat. Culpa voluptate Lorem esse
+                    labore. Consequat deserunt cupidatat excepteur incididunt ut
+                    qui amet qui. Pariatur ipsum velit eiusmod cillum qui nisi
+                    magna aliqua commodo ut ut cupidatat ex. Officia sunt
+                    deserunt ex commodo culpa velit cillum reprehenderit.
+                  </p>
+                  <img
+                    src="/public/images/quienesSomos/icons8-caja-de-dinero.gif"
+                    alt="Dinero" class="dinero"
+                  />
+                  <p>
+                    Laboris voluptate velit enim eu ea anim aute in qui
+                    excepteur commodo nisi non. Est laborum dolor ad nisi
+                    occaecat eiusmod ullamco. Laboris esse do ea in elit quis
+                    incididunt nisi sit Lorem id voluptate elit fugiat. Amet
+                    aliquip dolore ad irure veniam quis elit. Ad ea et ut
+                    eiusmod ex consectetur. Dolor laborum labore sint labore ad
+                    quis cillum do anim. Ea occaecat culpa et aliqua
+                    exercitation minim adipisicing consectetur non sit fugiat
+                    magna cillum ea. Ad amet mollit mollit consequat. Qui culpa
+                    anim irure veniam do id reprehenderit voluptate exercitation
+                    eiusmod id. Pariatur qui pariatur consequat fugiat minim
+                    culpa voluptate nulla velit incididunt et sint velit aliqua.
+                    Do sunt esse qui tempor nostrud est exercitation et do
+                    laboris ad dolore. Est commodo adipisicing enim voluptate
+                    duis pariatur eiusmod eu consectetur deserunt veniam nostrud
+                    excepteur. Culpa ullamco sit et aute officia sunt id dolor
+                    duis sit fugiat. Aliquip dolore aliqua officia anim. In do
+                    ad ex laborum cillum duis. Quis quis consequat in
+                    reprehenderit consectetur fugiat anim cupidatat consequat
+                    consectetur. Ea sint commodo ad sunt et fugiat eiusmod
+                    exercitation ut aliquip qui sint anim minim. Et fugiat est
+                    cupidatat dolore esse adipisicing commodo pariatur
+                    adipisicing sint aliqua ut do aliquip.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!--FOOTER-->
+      <footer>
+        <p>
+          Vigilado, Superintendecia Financiera de BANCO MI COLOMBIA S.A. todos
+          los derechos reservados 2022.
+        </p>
+        <h3>BANCO MI COLOMBIA</h3>
+        <label for="chekear"><img src="/public/images/principal/icons8-chevron-arriba-en-círculo-30.png" alt="Flecha arriba"></label>
+        <input type="checkbox" id="chekear"> 
+        <!--FOOTER: SUBFOOTER-->
+        <div id="subFooter">
+          <div class="sub">
+            <!--FOOTER: SUBFOOTER COLUMNA UNO-->
+            <div id="imagenBanco">
+              <img
+                src="/public/images/principal/HV.png"
+                alt="Documento"
+              />
+            </div>
+            <!--FOOTER: SUBFOOTER COLUMNA DOS-->
+            <div>
+              <p>
+                LINEAS DE ATENCION <br /><br />
+                BOGOTA <br />
+                (601) 338 3831 <br />
+                RESTO DEL PAÍS <br />
+                018000 123 832 <br />
+                CELULARES CLARO<br />
+                #331 <br />
+                DESDE ESTADOS UNIDOS <br />
+                833 95 73442 <br />
+                DESDE ESPAÑA <br />
+                00 8000 3383838
+              </p>
+            </div>
+            <!--FOOTER: SUBFOOTER COLUMNA TRES-->
+            <div>
+              <p>Links de interes</p>
+              <nav>
+                <ul>
+                  <li><a href="https://jsbp199414.github.io/Portafolio/" target="_blank" >Portafolio</a></li>
+                  <li><a href="/public/pdf/TerminosYCondiciones.pdf" target="_blank">Terminos de condiciones</a></li>
+                  <li><a href="/public/pdf/PoliticasDePrivacidad.pdf" target="_blank">Politica de tratamiento de datos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!--FOOTER: SUBFOOTER COLUMNA CUATRO-->
+            <div>
+              <nav>
+                <ul>
+                  <li class="img"><a href="https://www.youtube.com" target="_blank"><img src="/public/images/principal/Youtube.png" alt="Youtube"></a></li>
+                  <li class="img"><a href="https://www.facebook.com" target="_blank"><img src="/public/images/principal/icons8-facebook-nuevo-30.png" alt="Facebook"></a></li>
+                  <li class="img"><a href="https://www.instagram.com" target="_blank"><img src="/public/images/principal/icons8-instagram-30.png" alt="Instagram"></a></li>
+                  <li class="img"><a href="https://www.twitter.com" target="_blank"><img src="/public/images/principal/icons8-twitter-circled-30.png" alt="Twitter"></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

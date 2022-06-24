@@ -1,0 +1,77 @@
+@import url(/public/stylesheets/quienesSomos.css);
+
+/*--------------------------------------MEDIA QUERY------------------------------------*/
+
+/*--------------------Mediaquery max-width:1286px---------------*/
+@media all and (max-width:1286px){
+    /*MAIN*/
+    main{height: 650px;}
+    main section#fondo{height: 650px;}
+    main section#fondo ul li div p{font-size: .9rem;}
+}
+
+/*--------------------Mediaquery max-width:1227px---------------*/
+@media all and (max-width:1227px){
+    header{height: 180px;}
+}
+
+/*--------------------Mediaquery max-width:1227px---------------*/
+@media all and (max-width:1227px){
+    main section#fondo ul li div p{font-size: .8rem;}
+}
+
+/*--------------------Mediaquery max-width:1080px---------------*/
+@media all and (max-width:1080px){
+    main{height: 700px;}
+    main section#fondo{height: 700px;}
+}
+
+/*--------------------Mediaquery max-width:980px---------------*/
+@media all and (max-width:980px){
+    main{height: 750px;}
+    main section#fondo{height: 750px;}
+}
+
+/*--------------------Mediaquery max-width:950px---------------*/
+@media all and (max-width:950px){
+    main section#fondo ul li div p{font-size: .7rem;}
+    main section#fondo div ul li label{font-size: .8rem;}
+}
+
+/*--------------------Mediaquery max-width:800px---------------*/
+@media all and (max-width:800px){
+    /*HEADER*/
+    header{height: 190px;}
+    header label img{display: none;}
+    header #lineaDos nav#derecha a{color: white; text-shadow: none;}
+    /*FOOTER*/
+    footer label img{display: none;}
+}
+
+/*--------------------Mediaquery max-width:740px---------------*/
+@media all and (max-width:740px){
+    main section#fondo ul li div p{font-size: .6rem;}
+    main section#fondo div ul li label{font-size: .7rem;}
+}
+
+/*--------------------Mediaquery max-width:650px---------------*/
+@media all and (max-width:650px){
+    main section#fondo ul li div p{font-size: .6rem;}
+    main section#fondo div ul li label{font-size: .6rem;}
+    main section#fondo div p{font-size: .8rem;}
+}
+
+/*--------------------Mediaquery max-width:600px---------------*/
+@media all and (max-width:600px){
+    /*HEADER*/
+    header{height: 220px;}
+}
+
+
+
+/*--------------------Mediaquery max-width:500px---------------*/
+@media all and (max-width:500px){
+    /*HEADER*/
+    header{height: 270px;}
+    header #lineaDos{height: 50px;}
+}

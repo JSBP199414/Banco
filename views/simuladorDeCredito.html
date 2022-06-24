@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluimos favicon para icon de favoritos (Arroja error 404 cuando no tenemos asignado un icon asociado a tu pagina)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/principal/icons8-banco-48.ico">
+    <link rel="stylesheet" href="/public/stylesheets/trabajaConNosotros.css">
+    <link rel="stylesheet" href="/public/stylesheets/mediaQuery/mediaQueryTrabajaConNosotros.css">
+    <title>Banco mi Colombia</title>
+</head>
+<body>
+    <!--CONTENT FLEX BOX-->
+    <div id="content">
+        <!--HEADER-->
+        <header>
+            <!--HEADER LINEA UNO-->
+            <div id="lineaUno">
+                <!--HEADER LINEA UNO COLUMNA UNO-->
+                <div>
+                    <h1>BANCO MI COLOMBIA</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000" id="personas">PERSONAS</a></li>
+                            <li><a href="http://localhost:3000" id="empresas">EMPRESAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--HEADER LINEA UNO COLUMNA DOS-->
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/quienesSomos">¿Quienes somos?</a></li>
+                            <li><a href="http://localhost:3000/informacionInversionistas">Información para inversionistas</a></li>
+                            <li><a href="http://localhost:3000/informacionAdicional">Información adicional</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <a href="#" id="ingreso">INGRESO CLIENTES</a>
+                    </nav>     
+                </div>
+            </div>
+            <!--HEADER LINEA DOS-->
+            <div id="lineaDos">
+                <label for="chekearUno"><img src="/public/images/principal/icons8-chevron-abajo-en-círculo-30.png" alt="Flecha abajo"></label>
+                <input type="checkbox" id="chekearUno">
+                <!--FOOTER: SUBFOOTER-->
+                <div id="subMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/trabajaConNosotros">Trabaja con nosotros</a></li>
+                            <li><a href="http://localhost:3000/simuladorDeCredito">Simulador de credito</a></li>
+                            <li><a href="http://localhost:3000/tarjetas">Nuestras tarjetas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav id="derecha"><a href="">Pagos en linea y PSE</a></nav>
+                <% if(user){ %>
+                    <h2>Usuario <%= user.nombres %> <%= user.apellidos %>
+                    </h2>
+                    <% } %>
+                <nav id="izquierda"><a href="/logout">Cerrar sesion</a></nav>
+            </div>
+        </header>
+        <!--MAIN-->
+        <main>
+            <!--MAIN SECTION-UNO-->
+            <section id="fondo">
+                <h2>Simulador de Creditos </h2>
+                <h4>Pide tu credito</h4>
+                <form name="simulador" novalidate>
+                    <fieldset>
+                        <legend>Datos</legend>
+                        <input type="number" name="valor" id="valor" min="0"  placeholder="MONTO DEL PRESTAMO(*)" data-form-monto>
+                        <br>
+                        <input type="number" name="meses" id="meses" min="0" max="48" placeholder="PLAZO MESES(*)" data-form-meses>
+                        <br>
+                        <select name="tasas" id="tasas" data-form-tasas>
+                            <optgroup label="Tasa de interes">
+                                <option value="3">3%</option>
+                                <option value="6">6%</option>
+                                <option value="9">9%</option>
+                                <option value="12">12%</option>
+                                <option value="16">16%</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label for="date" id="fecha">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" id="date" name="date" min="1979-12-31" max="2004-12-31">
+                        <br>
+                        <input type="button" value="Calcular" data-button-calcular>
+                    </fieldset>
+                </form>
+                <br>
+                <!--DIV RESPUESTA SIMULADOR CREDITO-->
+                <div data-respuesta>
+                   
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <p>Vigilado, Superintendecia Financiera de BANCO MI COLOMBIA S.A. todos los derechos reservados 2022.</p>
+            <h3>BANCO MI COLOMBIA</h3>
+            <label for="chekear"><img src="/public/images/principal/icons8-chevron-arriba-en-círculo-30.png" alt="Flecha arriba"></label>
+            <input type="checkbox" id="chekear"> 
+            <!--FOOTER: SUBFOOTER-->
+            <div id="subFooter">
+                <div class="sub">
+                    <!--FOOTER: SUBFOOTER COLUMNA UNO-->
+                    <div id="imagenBanco">
+                        <img src="/public/images/principal/Portatil.png" alt="Portatil">
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA DOS-->
+                    <div>
+                        <p>LINEAS DE ATENCION <br><br>
+                            BOGOTA <br>
+                            (601) 338 3831 <br>
+                            RESTO DEL PAÍS <br>
+                            018000 123 832 <br>
+                            CELULARES CLARO<br>
+                            #331 <br>
+                            DESDE ESTADOS UNIDOS <br>
+                            833 95 73442 <br>
+                            DESDE ESPAÑA <br>
+                            00 8000 3383838
+                            </p>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA TRES-->
+                    <div>
+                        <p>Links de interes</p>
+                        <nav>
+                            <ul>
+                                <li><a href="https://jsbp199414.github.io/Portafolio/" target="_blank" >Portafolio</a></li>
+                                <li><a href="/public/pdf/TerminosYCondiciones.pdf" target="_blank">Terminos de condiciones</a></li>
+                                <li><a href="/public/pdf/PoliticasDePrivacidad.pdf" target="_blank">Politica de tratamiento de datos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA CUATRO-->
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="img"><a href="https://www.youtube.com" target="_blank"><img src="/public/images/principal/Youtube.png" alt="Youtube"></a></li>
+                                <li class="img"><a href="https://www.facebook.com" target="_blank"><img src="/public/images/principal/icons8-facebook-nuevo-30.png" alt="Facebook"></a></li>
+                                <li class="img"><a href="https://www.instagram.com" target="_blank"><img src="/public/images/principal/icons8-instagram-30.png" alt="Instagram"></a></li>
+                                <li class="img"><a href="https://www.twitter.com" target="_blank"><img src="/public/images/principal/icons8-twitter-circled-30.png" alt="Twitter"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--SCRIPT JAVASCRIPTS CALCULAR-->
+    <script src="/public/javascripts/calcular.js"></script>  
+</body>
+</html>

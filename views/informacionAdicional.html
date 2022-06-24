@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluimos favicon para icon de favoritos (Arroja error 404 cuando no tenemos asignado un icon asociado a tu pagina)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/principal/icons8-banco-48.ico">
+    <link rel="stylesheet" href="/public/stylesheets/informacionAdicional.css">
+    <link rel="stylesheet" href="/public/stylesheets/mediaQuery/mediaQueryInformacionAdicional.css">
+    <title>Banco mi Colombia</title>
+</head>
+
+<body>
+    <!--CONTENT FLEX BOX-->
+    <div id="content">
+        <!--HEADER-->
+        <header>
+            <!--HEADER LINEA UNO-->
+            <div id="lineaUno">
+                <!--HEADER LINEA UNO COLUMNA UNO-->
+                <div>
+                    <h1>BANCO MI COLOMBIA</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000" id="personas">PERSONAS</a></li>
+                            <li><a href="http://localhost:3000" id="empresas">EMPRESAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--HEADER LINEA UNO COLUMNA DOS-->
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/quienesSomos">¿Quienes somos?</a></li>
+                            <li><a href="http://localhost:3000/informacionInversionistas">Información para inversionistas</a></li>
+                            <li><a href="#">Información adicional</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <a href="http://localhost:3000/users" id="ingreso">INGRESO CLIENTES</a>
+                    </nav>
+                </div>
+            </div>
+            <!--HEADER LINEA DOS-->
+            <div id="lineaDos">
+                <label for="chekearUno"><img src="/public/images/principal/icons8-chevron-abajo-en-círculo-30.png" alt="Flecha abajo"></label>
+                <input type="checkbox" id="chekearUno"> 
+                <!--FOOTER: SUBFOOTER-->
+                <div id="subMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/trabajaConNosotros">Trabaja con nosotros</a></li>
+                            <li><a href="http://localhost:3000/simuladorDeCredito">Simulador de credito</a></li>
+                            <li><a href="http://localhost:3000/tarjetas">Nuestras tarjetas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav id="derecha"><a href="">Pagos en linea y PSE</a></nav>
+                <% if(user){ %>
+                    <h2>Usuario <%= user.nombres %>
+                            <%= user.apellidos %>
+                    </h2>
+                    <% } %>
+                        <nav id="izquierda"><a href="/logout" >Cerrar sesion</a></nav>
+            </div>
+        </header>
+        <!--MAIN-->
+        <main>
+            <!--MAIN SECTION-UNO-->
+            <section id="fondo">
+                <div class="cajas">
+                    <div id="imagenUno" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Tasas y tarifas</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenDos" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Estudios economicos</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis else sion.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenTres" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Seguro de depositos</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis else sion.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenCuatro" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Informe anual</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt esio auni muyrtr.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenCinco" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Reforma tributaria</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenSeis" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Informacion legal</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt esio auni muyrtr.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenSiete" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Certificados empresariales</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt esio auni muyrtr.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenOcho" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Inmobiliaria</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis else sion.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenNueve" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Finanzas</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis else sion.
+                        </p>
+                    </div>
+                </div>
+                <div class="cajas">
+                    <div id="imagenDiez" class="imagen">
+                    </div>
+                    <div class="texto">
+                        <h5>Inversiones banca</h5>
+                        <p>Minim amet ullamco anim tempor consequat amet tempor cillum. Et enim occaecat et velit anim
+                           magna. Tempor nostrud duis sint excepteur minim. Reprehenderit voluptate sunt culpa quis else sion.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <p>Vigilado, Superintendecia Financiera de BANCO MI COLOMBIA S.A. todos los derechos reservados 2022.</p>
+            <h3>BANCO MI COLOMBIA</h3>
+            <label for="chekear"><img src="/public/images/principal/icons8-chevron-arriba-en-círculo-30.png" alt="Flecha arriba"></label>
+            <input type="checkbox" id="chekear">  
+            <!--FOOTER: SUBFOOTER-->
+            <!--FOOTER: SUBFOOTER-->
+            <div id="subFooter">
+                <div class="sub">
+                    <!--FOOTER: SUBFOOTER COLUMNA UNO-->
+                    <div id="imagenBanco">
+                        <img src="/public/images/principal/Portatil.png" alt="Portatil">
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA DOS-->
+                    <div>
+                        <p>LINEAS DE ATENCION <br><br>
+                            BOGOTA <br>
+                            (601) 338 3831 <br>
+                            RESTO DEL PAÍS <br>
+                            018000 123 832 <br>
+                            CELULARES CLARO<br>
+                            #331 <br>
+                            DESDE ESTADOS UNIDOS <br>
+                            833 95 73442 <br>
+                            DESDE ESPAÑA <br>
+                            00 8000 3383838
+                        </p>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA TRES-->
+                    <div>
+                        <p>Links de interes</p>
+                        <nav>
+                            <ul>
+                                <li><a href="https://jsbp199414.github.io/Portafolio/" target="_blank" >Portafolio</a></li>
+                                <li><a href="/public/pdf/TerminosYCondiciones.pdf" target="_blank">Terminos de condiciones</a></li>
+                                <li><a href="/public/pdf/PoliticasDePrivacidad.pdf" target="_blank">Politica de tratamiento de datos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA CUATRO-->
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="img"><a href="https://www.youtube.com" target="_blank"><img src="/public/images/principal/Youtube.png" alt="Youtube"></a></li>
+                                <li class="img"><a href="https://www.facebook.com" target="_blank"><img src="/public/images/principal/icons8-facebook-nuevo-30.png" alt="Facebook"></a></li>
+                                <li class="img"><a href="https://www.instagram.com" target="_blank"><img src="/public/images/principal/icons8-instagram-30.png" alt="Instagram"></a></li>
+                                <li class="img"><a href="https://www.twitter.com" target="_blank"><img src="/public/images/principal/icons8-twitter-circled-30.png" alt="Twitter"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

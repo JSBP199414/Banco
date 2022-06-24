@@ -1,0 +1,154 @@
+@import url(/public/stylesheets/style.css);
+
+/*------------------------------------MAIN DISEÑO-------------------------------------*/
+
+main section#fondo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: .5px;
+    filter: opacity(100%); 
+    background: azure;
+}
+/*--------MAIN:DISEÑO LINEA UNO h3--------*/
+main section#fondo div h3,h4{
+    padding: 2px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main section#fondo ul li div p{
+    padding: 2px;
+    margin: 1px auto;
+}
+main section#fondo ul li div img.dinero{
+    float: left;
+    margin: 2px 20px;
+}
+main section#fondo ul li div img.factura{
+    float: right;
+    margin: 2px 20px;
+}
+/*--------MAIN:DISEÑO LINEA DOS ul--------*/
+main section#fondo div ul{
+    position: relative;
+    width: 95%;
+    height: 300px;
+    margin: 1px auto;
+    border: .2px solid darkgray;
+    box-shadow: 0px 0px 40px gray;
+}
+/*--------MAIN:DISEÑO LINEA DOS li label--------*/
+main section#fondo div ul li label{
+    position: absolute;
+    width: 10%;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: .2px solid black;
+    transition: all .2s ease-out;
+}
+main section#fondo div ul li label#uno{
+    top: 10px;
+    left: 20px;
+}
+main section#fondo div ul li label#dos{
+    top: 40px;
+    left: 20px; 
+}
+main section#fondo div ul li label#tres{
+    top: 70px;
+    left: 20px;
+}
+main section#fondo div ul li label#cuatro{
+    top: 100px;
+    left: 20px;
+}
+main section#fondo div ul li label#cinco{
+    top: 130px;
+    left: 20px;
+}
+main section#fondo div ul li label#seis{
+    top: 160px;
+    left: 20px;
+}
+/*--------MAIN:DISEÑO LINEA DOS div--------*/
+main section#fondo div ul li div, li#inicial div{
+    position: absolute;
+    right: 0;
+    width: 85%;
+    height: 296px;
+    opacity: 0;
+    margin: 1px auto;
+    border: .1px solid darkgray;
+    box-shadow: 0px 0px 10px gray;
+}
+main section#fondo div ul li#inicial div#caja{
+    opacity: .3;
+}
+main section#fondo div ul li#inicial div img{
+    object-fit: cover;
+    height: 85%;
+    width: 98%;
+}
+main section#fondo div ul li#inicial div h4{
+    opacity: .2;
+}
+main section#fondo div ul li div#cajaUno{
+    opacity: 0;  
+}
+main section#fondo div ul li div#cajaDos{
+    opacity: 0; 
+}
+main section#fondo div ul li div#cajaTres{
+    opacity: 0;
+}
+/*--------MAIN:DISEÑO LINEA DOS input--------*/
+main section#fondo div ul li input{
+    position: absolute;
+    display: none;
+}
+main section#fondo div ul li input#botonUno{
+    left: 0px;
+    top: 10px;
+}
+main section#fondo div ul li input#botonDos{
+    left: 0px;
+    top: 30px;
+}
+main section#fondo div ul li input#botonTres{
+    left: 0px;
+    top:50px;
+}
+main section#fondo div ul li input#botonCuatro{
+    left: 0px;
+    top:70px;
+}
+main section#fondo div ul li input#botonCinco{
+    left: 0px;
+    top:90px;
+}
+main section#fondo div ul li input#botonSeis{
+    left: 0px;
+    top:110px;
+}
+main section#fondo div ul li input#botonUno:checked ~ div#cajaUno{
+    opacity: 1;
+}
+main section#fondo div ul li input#botonDos:checked ~ div#cajaDos{
+    opacity: 1;
+}
+main section#fondo div ul li input#botonTres:checked ~ div#cajaTres{
+    opacity: 1;
+}
+main section#fondo div ul li input#botonCuatro:checked ~ div#cajaCuatro{
+    opacity: 1;
+}
+main section#fondo div ul li input#botonCinco:checked ~ div#cajaCinco{
+    opacity: 1;
+}
+main section#fondo div ul li input#botonSeis:checked ~ div#cajaSeis{
+    opacity: 1;
+}
+
+

@@ -1,0 +1,31 @@
+@import url(/public/stylesheets/style.css);
+
+/*--------------------------------------MEDIA QUERY------------------------------------*/
+
+/*--------------------Mediaquery max-width:1227px---------------*/
+@media all and (max-width:1227px){
+    header{height: 180px;}
+}
+
+/*--------------------Mediaquery max-width:800px---------------*/
+@media all and (max-width:800px){
+    /*HEADER*/
+    header{height: 190px;}
+    header label img{display: none;}
+    header #lineaDos nav#derecha a{color: white; text-shadow: none;}
+    /*FOOTER*/
+    footer label img{display: none;}
+}
+
+/*--------------------Mediaquery max-width:600px---------------*/
+@media all and (max-width:600px){
+    /*HEADER*/
+    header{height: 220px;}
+}
+
+/*--------------------Mediaquery max-width:500px---------------*/
+@media all and (max-width:500px){
+    /*HEADER*/
+    header{height: 270px;}
+    header #lineaDos{height: 50px;}
+}

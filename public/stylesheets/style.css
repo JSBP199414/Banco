@@ -1,0 +1,195 @@
+@import url(/public/stylesheets/reset.css);
+/*------------------------------Diseño responsive flexbox-general---------------------------*/
+#content{
+  margin: 0px auto;
+  min-height: 100vh;
+  padding: 1px;
+  border: .2px solid skyblue;
+  display: flex;
+  flex-flow: row wrap;  
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+#content >*{
+  padding: 3px;
+  margin: .2px auto;
+  text-align: center;
+}
+/*----------------------------HEADER: Diseño de HEADER-------------------------------*/
+header{
+  flex-basis: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: linear-gradient(to bottom right, #9EDEB8,#4D7553);
+}
+/*HEADER-LINEA UNO: Diseño de la lineaUno */
+header #lineaUno{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+/*HEADER-LINEA UNO: Diseño de la lineaUno ColumnaUno */
+header #lineaUno div nav, nav li, h1{
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+}
+header #lineaUno div h1{
+  vertical-align: top;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  text-shadow: 1px 2px rgba(36, 36, 36, 0.94);
+}
+header #lineaUno div nav li a, nav a,footer p, footer h3{
+  text-decoration: none;
+  color: rgb(240, 239, 239);
+  text-shadow: .5px .8px rgb(149, 149, 149);
+}
+header #lineaUno div h1::before{
+  content: url(/public/images/principal/icons8-banco-48.ico);
+  margin: 5px;
+  vertical-align: sub;
+}
+header #lineaUno div nav li a#personas::before{
+  content: url(/public/images/principal/icons8-hombre-de-negocios-20.svg);
+  margin: 1px 5px;
+}
+header #lineaUno div nav li a#empresas::before{
+  content: url(/public/images/principal/icons8-maletín-20.svg);
+  margin: 1px 5px;
+}
+/*HEADER-LINEA DOS: Diseño de la lineaDos*/
+header #lineaDos{
+  height: 37px;
+  position: relative;
+  background-color: white;
+}
+header #lineaDos h2{
+  position: absolute;
+  top: 0px;
+  left: 60px;
+}
+header #lineaDos nav#derecha{
+  text-align: right;
+  margin: 1px 155px;
+}
+header #lineaDos nav#izquierda{
+  text-align: left;
+  margin: .5px 60px;
+}
+header #lineaDos nav a{
+  color: black;
+}
+/*HEADER: COLUMNA DOS-BUTTON FLECHA DESPLIEGUE DE SUBMENU*/
+header label img{
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  z-index: 2;
+  cursor: pointer;
+}
+#chekearUno:checked + #subMenu{
+  display: block;
+}
+input#chekearUno{
+  display: none;
+}
+header div#lineaDos div#subMenu{
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 50px;
+  margin: 0px auto;
+  z-index: 2;
+  display: none;
+  background: linear-gradient(to bottom right, #9EDEB8,#4D7553);
+}
+div#subMenu nav ul li::before{
+  content: url(/public/images/principal/icons8-chebrón-hacia-la-derecha-10.png);
+}
+/*----------------------------MAIN: Diseño de MAIN-------------------------------*/
+main{
+  flex-basis: 100%;
+  height: 500px;
+  background-color: rgb(240, 239, 239);
+}
+main section#fondo{
+  width: 100%;
+  height: 498px;
+  background: url(/public/images/principal/money-g7605cd4f7_1280.jpg) left no-repeat , url(/public/images/principal/man-g8a85d953c_1280.png) right no-repeat;
+  background-size: contain, contain;
+  filter: opacity(100%); 
+}
+/*----------------------------FOOTER: Diseño de FOOTER-------------------------------*/
+footer{
+  position: relative;
+  flex-basis: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom right, #9EDEB8,#4D7553,#323232cc);
+  transition: 2s ease-out;
+}
+/*FOOTER: BUTTON FLECHA DESPLIEGUE DE SUBFOOTER*/
+footer label img{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+#chekear:checked + #subFooter{
+  display: block;
+}
+input#chekear{
+  display: none;
+}
+/*FOOTER: SUBFOOTER*/
+footer div#subFooter{
+  position: absolute;
+  top: -262px;
+  width: 99.8%;
+  height: 260px;
+  margin: 0px auto;
+  display: none;
+  background: linear-gradient(to bottom right, #9EDEB8,#4D7553);
+}
+.sub{
+  width: 100%;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: .5px;
+}
+.sub p{
+  margin: 20px auto;
+  padding: 10px;
+}
+.sub nav li{
+  display: block;
+  margin: 20px auto;
+}
+.sub nav li::before{
+  content: url(/public/images/principal/icons8-chebrón-hacia-la-derecha-10.png);
+}
+.sub nav li.img::before{
+  content: none;
+}
+.sub div#imagenBanco img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.sub div#imagenBanco{
+  width: 45%;
+  height: 150px;
+  margin:  auto;
+  animation: flip 3s infinite;
+  animation-delay: calc(.1s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+

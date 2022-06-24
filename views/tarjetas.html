@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluimos favicon para icon de favoritos (Arroja error 404 cuando no tenemos asignado un icon asociado a tu pagina)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/principal/icons8-banco-48.ico">
+    <link rel="stylesheet" href="/public/stylesheets/InformacionInversion.css">
+    <link rel="stylesheet" href="/public/stylesheets/mediaQuery/mediaQueryInformacionInversion.css">
+    <title>Banco mi Colombia</title>
+</head>
+<body>
+    <!--CONTENT FLEX BOX-->
+    <div id="content">
+        <!--HEADER-->
+        <header>
+            <!--HEADER LINEA UNO-->
+            <div id="lineaUno">
+                <!--HEADER LINEA UNO COLUMNA UNO-->
+                <div>
+                    <h1>BANCO MI COLOMBIA</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000" id="personas">PERSONAS</a></li>
+                            <li><a href="http://localhost:3000" id="empresas">EMPRESAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--HEADER LINEA UNO COLUMNA DOS-->
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/quienesSomos">¿Quienes somos?</a></li>
+                            <li><a href="#">Información para inversionistas</a></li>
+                            <li><a href="http://localhost:3000/informacionAdicional">Información adicional</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <a href="http://localhost:3000/users" id="ingreso">INGRESO CLIENTES</a>
+                    </nav>
+                </div>
+            </div>
+            <!--HEADER LINEA DOS-->
+            <div id="lineaDos">
+                <label for="chekearUno"><img src="/public/images/principal/icons8-chevron-abajo-en-círculo-30.png" alt="Flecha abajo"></label>
+                <input type="checkbox" id="chekearUno">  
+                <!--FOOTER: SUBFOOTER-->
+                <div id="subMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/trabajaConNosotros">Trabaja con nosotros</a></li>
+                            <li><a href="http://localhost:3000/simuladorDeCredito">Simulador de credito</a></li>
+                            <li><a href="http://localhost:3000/tarjetas">Nuestras tarjetas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav id="derecha"><a href="">Pagos en linea y PSE</a></nav>
+                <% if(user){ %>
+                    <h2>Usuario <%= user.nombres %>
+                            <%= user.apellidos %>
+                    </h2>
+                    <% } %>
+                        <nav id="izquierda"><a href="/logout">Cerrar sesion</a></nav>
+            </div>
+        </header>
+        <!--MAIN-->
+        <main>
+        <!--MAIN SECTION-UNO-->
+            <section id="fondo">
+                <h2>Tarjetas Debito</h2>
+                <div id="captura">
+                    <img src="/public/images/tarjetas/tarjetas.jpg" alt="Tarjetas Banco">
+                </div>
+                <div id="texto">
+                    <p>
+                        Consequat aute anim amet incididunt officia nulla ullamco amet officia aute adipisicing nostrud
+                        sunt. Exercitation occaecat elit do quis quis eiusmod. Dolore incididunt velit in laboris
+                        cupidatat nisi esse consequat exercitation laboris nisi eiusmod sint nisi. Commodo in fugiat
+                        officia labore nulla cupidatat sint. Sit fugiat labore reprehenderit Lorem consequat aute enim
+                        veniam quis velit sit.
+
+                        Veniam commodo esse aute amet ut quis amet labore. Eu ex ad eu reprehenderit ad. Ipsum voluptate
+                        duis elit fugiat. Elit mollit labore reprehenderit qui dolore aliqua elit in consequat officia.
+                        Do mollit esse non aute mollit.
+                    </p> <br>
+                    <p>
+                        Laboris qui ea ad aliquip amet aliquip. Culpa voluptate magna aute irure eu magna non eiusmod
+                        esse fugiat qui laboris irure. Irure quis ea tempor exercitation sit nisi consequat. Deserunt
+                        elit eiusmod qui fugiat mollit qui incididunt velit excepteur non ea do sint ullamco. Quis minim
+                        eu pariatur exercitation incididunt pariatur magna cillum do incididunt fugiat non aute aliqua.
+                        In veniam id minim voluptate excepteur pariatur ad do magna.
+
+                        Nostrud fugiat veniam incididunt non magna est voluptate ex commodo. Nostrud aliquip ad anim
+                        tempor in qui eu. Sit anim enim aliqua in sint. Sint aliqua ut magna sint esse aliquip. Ad
+                        laborum ex ex exercitation excepteur magna nostrud est duis Lorem nostrud ex elit. Magna
+                        consectetur laboris cupidatat velit Lorem sunt mollit dolor ipsum culpa sit. Sit fugiat ad enim
+                        occaecat ex et laboris occaecat sunt adipisicing cupidatat ex.
+                    </p> <br>
+                    <p>
+                        Sit quis cupidatat proident consectetur eu eu. Est exercitation ut elit minim cupidatat commodo
+                        Lorem irure laborum nisi cupidatat exercitation labore. Tempor ullamco cupidatat ea sint eiusmod
+                        voluptate ea exercitation eiusmod velit qui. Quis Lorem dolore mollit minim tempor dolor aute.
+                        Laborum incididunt id ullamco aute est qui ad eiusmod id incididunt do adipisicing. Laborum
+                        tempor aliquip qui labore veniam. Enim dolor culpa dolor exercitation nostrud elit Lorem.
+
+                        Ex proident Lorem quis culpa consequat consectetur elit Lorem occaecat minim nulla. Excepteur in
+                        reprehenderit in ipsum id officia consectetur voluptate. Magna id tempor cillum incididunt
+                        laboris occaecat mollit. Non non aliquip minim cupidatat cillum ut fugiat. Aliquip duis mollit
+                        occaecat culpa deserunt do. Tempor labore nulla consectetur et pariatur excepteur.
+
+                        Commodo consequat laborum laboris laboris Lorem quis mollit velit eu excepteur commodo minim.
+                        Ullamco ut reprehenderit ipsum id quis est laborum. Occaecat qui nostrud exercitation qui et ut
+                        ad pariatur velit. Consequat aliqua aute irure ea adipisicing adipisicing. Exercitation eiusmod
+                        nisi incididunt velit ullamco laboris aliqua est proident dolore veniam. Sit ea eiusmod magna
+                        non consequat esse.
+                    </p>
+                </div>
+
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <p>Vigilado, Superintendecia Financiera de BANCO MI COLOMBIA S.A. todos los derechos reservados 2022.</p>
+            <h3>BANCO MI COLOMBIA</h3>
+            <label for="chekear"><img src="/public/images/principal/icons8-chevron-arriba-en-círculo-30.png" alt="Flecha arriba"></label>
+            <input type="checkbox" id="chekear">  
+            <!--FOOTER: SUBFOOTER-->
+            <!--FOOTER: SUBFOOTER-->
+            <div id="subFooter">
+                <div class="sub">
+                    <!--FOOTER: SUBFOOTER COLUMNA UNO-->
+                    <div id="imagenBanco">
+                        <img src="/public/images/principal/Dinero.png" alt="Dinero">
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA DOS-->
+                    <div>
+                        <p>LINEAS DE ATENCION <br><br>
+                            BOGOTA <br>
+                            (601) 338 3831 <br>
+                            RESTO DEL PAÍS <br>
+                            018000 123 832 <br>
+                            CELULARES CLARO<br>
+                            #331 <br>
+                            DESDE ESTADOS UNIDOS <br>
+                            833 95 73442 <br>
+                            DESDE ESPAÑA <br>
+                            00 8000 3383838
+                        </p>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA TRES-->
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="https://jsbp199414.github.io/Portafolio/" target="_blank" >Portafolio</a></li>
+                                <li><a href="/public/pdf/TerminosYCondiciones.pdf" target="_blank">Terminos de condiciones</a></li>
+                                <li><a href="/public/pdf/PoliticasDePrivacidad.pdf" target="_blank">Politica de tratamiento de datos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA CUATRO-->
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="img"><a href="https://www.youtube.com" target="_blank"><img src="/public/images/principal/Youtube.png" alt="Youtube"></a></li>
+                                <li class="img"><a href="https://www.facebook.com" target="_blank"><img src="/public/images/principal/icons8-facebook-nuevo-30.png" alt="Facebook"></a></li>
+                                <li class="img"><a href="https://www.instagram.com" target="_blank"><img src="/public/images/principal/icons8-instagram-30.png" alt="Instagram"></a></li>
+                                <li class="img"><a href="https://www.twitter.com" target="_blank"><img src="/public/images/principal/icons8-twitter-circled-30.png" alt="Twitter"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

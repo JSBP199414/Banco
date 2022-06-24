@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Incluimos favicon para icon de favoritos (Arroja error 404 cuando no tenemos asignado un icon asociado a tu pagina)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/principal/icons8-banco-48.ico">
+    <link rel="stylesheet" href="/public/stylesheets/users.css">
+    <link rel="stylesheet" href="/public/stylesheets/mediaQuery/mediaQueryTrabajaConNosotros.css">
+    <!--Script Sweetalert-Libreria-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Banco mi Colombia</title>
+</head>
+<body>
+    <!--CONTENT FLEX BOX-->
+    <div id="content">
+        <!--HEADER-->
+        <header>
+            <!--HEADER LINEA UNO-->
+            <div id="lineaUno">
+                <!--HEADER LINEA UNO COLUMNA UNO-->
+                <div>
+                    <h1>BANCO MI COLOMBIA</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000" id="personas">PERSONAS</a></li>
+                            <li><a href="#" id="empresas">EMPRESAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--HEADER LINEA UNO COLUMNA DOS-->
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:3000/quienesSomos">¿Quienes somos?</a></li>
+                            <li><a href="http://localhost:3000/informacionInversionistas">Información para inversionistas</a></li>
+                            <li><a href="http://localhost:3000/informacionAdicional">Información adicional</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <a href="#" id="ingreso">INGRESO CLIENTES</a>
+                    </nav>     
+                </div>
+            </div>
+            <!--HEADER LINEA DOS-->
+            <div id="lineaDos">
+                <label for="chekearUno"><img src="/public/images/principal/icons8-chevron-abajo-en-círculo-30.png" alt="Flecha abajo"></label>
+                <input type="checkbox" id="chekearUno">
+                <!--FOOTER: SUBFOOTER-->
+                <div id="subMenu">
+    
+                </div>
+            </div>
+        </header>
+        <!--MAIN-->
+        <main>
+            <section id="fondo">
+                
+                <h2>Transacciones de clientes</h2>
+                <h4>Ingresar a Banco mi Colombia</h4>
+                <form action="/users" method="post">
+                    <fieldset>
+                        <legend>Cedula del usuario</legend>
+                        <input type="number" name="cedula" id="cedula" placeholder="CEDULA(*)">
+                        <br>
+                        <input type="password" name="password" id="password" placeholder="CONTRASEÑA(*)">
+                        <br>
+                        <input type="submit" value="Ingresar">
+                    </fieldset>
+                </form>
+                <br>
+                <nav>
+                    <ul>
+                        <li><a href="http://localhost:3000/users/registrarse">Registrarse aquí</a></li>
+                        <li><a href="http://localhost:3000/users/tablaClientes">Usuarios registrados</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <p>Vigilado, Superintendecia Financiera de BANCO MI COLOMBIA S.A. todos los derechos reservados 2022.</p>
+            <h3>BANCO MI COLOMBIA</h3>
+            <label for="chekear"><img src="/public/images/principal/icons8-chevron-arriba-en-círculo-30.png" alt="Flecha arriba"></label>
+            <input type="checkbox" id="chekear"> 
+            <!--FOOTER: SUBFOOTER-->
+            <div id="subFooter">
+                <div class="sub">
+                    <!--FOOTER: SUBFOOTER COLUMNA UNO-->
+                    <div id="imagenBanco">
+                        <img src="/public/images/principal/Portatil.png" alt="Portatil">
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA DOS-->
+                    <div>
+                        <p>LINEAS DE ATENCION <br><br>
+                            BOGOTA <br>
+                            (601) 338 3831 <br>
+                            RESTO DEL PAÍS <br>
+                            018000 123 832 <br>
+                            CELULARES CLARO<br>
+                            #331 <br>
+                            DESDE ESTADOS UNIDOS <br>
+                            833 95 73442 <br>
+                            DESDE ESPAÑA <br>
+                            00 8000 3383838
+                            </p>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA TRES-->
+                    <div>
+                        <p>Links de interes</p>
+                        <nav>
+                            <ul>
+                                <li><a href="https://jsbp199414.github.io/Portafolio/" target="_blank" >Portafolio</a></li>
+                                <li><a href="/public/pdf/TerminosYCondiciones.pdf" target="_blank">Terminos de condiciones</a></li>
+                                <li><a href="/public/pdf/PoliticasDePrivacidad.pdf" target="_blank">Politica de tratamiento de datos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--FOOTER: SUBFOOTER COLUMNA CUATRO-->
+                    <div>
+                        <nav>
+                            <ul>
+                                <li class="img"><a href="https://www.youtube.com" target="_blank"><img src="/public/images/principal/Youtube.png" alt="Youtube"></a></li>
+                                <li class="img"><a href="https://www.facebook.com" target="_blank"><img src="/public/images/principal/icons8-facebook-nuevo-30.png" alt="Facebook"></a></li>
+                                <li class="img"><a href="https://www.instagram.com" target="_blank"><img src="/public/images/principal/icons8-instagram-30.png" alt="Instagram"></a></li>
+                                <li class="img"><a href="https://www.twitter.com" target="_blank"><img src="/public/images/principal/icons8-twitter-circled-30.png" alt="Twitter"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>  
+     <!--Script Sweetalert-Libreria-->
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <% if(alert) {%>
+     <script>
+       Swal.fire({
+         title:'<%= alertTitle %>',
+         text:'<%= alertMessage %>',
+         icon:'<%= alertIcon %>',
+         showConfirmButton: '<%=  showConfirmButton %>',
+         timer: '<%= timer %>'
+       }).then(()=>{
+         window.location='/<%= ruta %>'
+       })
+     </script>
+<% } %>
+</body>
+</html>

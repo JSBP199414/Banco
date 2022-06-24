@@ -1,0 +1,87 @@
+@import url(/public/stylesheets/style.css);
+
+/*----------------------------------------MAIN DISEÑO------------------------------------*/
+main section#fondo{
+    background: azure;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    filter: opacity(100%); 
+}
+main section#fondo div.cajas{
+    flex-basis: 30%;
+    height: 90px;
+    margin: 2px auto;
+    padding: 1px;
+    display: flex;
+    flex-flow: column wrap;
+}
+main section#fondo div.cajas div.imagen{
+    width: 40%;
+    height: 88px;
+    margin: 1px;
+}
+main section#fondo div.cajas div.texto{
+    width: 60%;
+    height: 86px;
+    margin: 1px;
+}
+main section#fondo div.cajas div.texto p{
+    font-size: .9em;
+}
+main section#fondo div.cajas div.texto h5{
+    color: red;
+    font-weight: bold;
+}
+div#imagenUno{
+    background-image: url(/public/images/Informacion/bank-notes-941246_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenDos{
+    background-image: url(/public/images/Informacion/BancoUno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenTres{
+    background-image: url(/public/images/Informacion/BancoDos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenCuatro{
+    background-image: url(/public/images/Informacion/BancoTres.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenCinco{
+    background-image: url(/public/images/Informacion/BancoSeis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenSeis{
+    background-image: url(/public/images/Informacion/BancoCinco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenSiete{
+    background-image: url(/public/images/Informacion/BancoSiete.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenOcho{
+    background-image: url(/public/images/Informacion/BancoOcho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenNueve{
+    background-image: url(/public/images/Informacion/BancoNueve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagenDiez{
+    background-image: url(/public/images/Informacion/BancoDiez.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

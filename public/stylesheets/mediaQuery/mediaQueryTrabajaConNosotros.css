@@ -1,0 +1,16 @@
+@import url(/public/stylesheets/trabajaConNosotros.css);
+@import url(/public/stylesheets/mediaQuery/mediaQueryStyle.css);
+
+/*--------------------------------------MEDIA QUERY------------------------------------*/
+
+/*--------------------Mediaquery max-width:1286px---------------*/
+@media all and (max-width:1100px){
+    main form input, select{width: 30%;}
+    main form input[type=submit],[type=button]{width: 20%;}
+}
+
+/*--------------------Mediaquery max-width:600px---------------*/
+@media all and (max-width:600px){
+    main form input, select{width: 40%;}
+    main form input[type=submit],[type=button]{width: 30%;}
+}
